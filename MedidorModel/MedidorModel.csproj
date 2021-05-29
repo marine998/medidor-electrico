@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\MedidorDAL.cs" />
+    <Compile Include="DAL\IMedidorDAL.cs" />
     <Compile Include="DAL\MedidorDALArchivo.cs" />
     <Compile Include="DTO\Medidor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
