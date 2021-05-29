@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedidorElectrico", "Medidor Electrico\MedidorElectrico.csproj", "{1001B7B1-DCA9-4337-8AAD-33CF98388040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedidorModel", "MedidorModel\MedidorModel.csproj", "{D87C1844-A446-495D-A4B5-478FD71DD24D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1001B7B1-DCA9-4337-8AAD-33CF98388040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1001B7B1-DCA9-4337-8AAD-33CF98388040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1001B7B1-DCA9-4337-8AAD-33CF98388040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1001B7B1-DCA9-4337-8AAD-33CF98388040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87C1844-A446-495D-A4B5-478FD71DD24D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87C1844-A446-495D-A4B5-478FD71DD24D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87C1844-A446-495D-A4B5-478FD71DD24D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87C1844-A446-495D-A4B5-478FD71DD24D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76330B01-7784-4D2A-BB05-21C2ED0CE6D4}
+	EndGlobalSection
+EndGlobal
