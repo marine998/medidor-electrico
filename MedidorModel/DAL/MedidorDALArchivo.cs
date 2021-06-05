@@ -61,12 +61,16 @@ namespace MedidorModel.DAL
                         if (texto != null)
                         {
                             string[] arr = texto.Trim().Split('|');
-                            Medidor medidor = new Medidor();
-                            string nmr = Convert.ToString(medidor.NroMedidor);
-                            string valor = Convert.ToString(medidor.ValorConsumo);
-                            nmr = arr[0];
-                            medidor.Fecha = arr[1];
-                            valor = arr[2];
+                            int num = Convert.ToInt32(arr[0]);
+                            string fecha = Convert.ToString(arr[1]);
+                            decimal valor = Convert.ToDecimal(arr[2]);
+
+                            Medidor medidor = new Medidor()
+                            {
+                                NroMedidor = num,
+                                Fecha = fecha,
+                                ValorConsumo = valor
+                            };
 
                             lista.Add(medidor);
                         }

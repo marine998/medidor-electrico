@@ -44,29 +44,28 @@ namespace MedidorElectrico
 
         private static void Ingresar()
         {
-            Console.WriteLine("Ingrese Número Medidor:");
-            string nmr = Console.ReadLine().Trim();
-            Console.WriteLine("Ingrese Fecha:");
-            string fecha = Console.ReadLine().Trim();
-            Console.WriteLine("Ingrese Valor de Consumo:");
-            string valor = Console.ReadLine().Trim();
+            Console.WriteLine("Ingrese los Datos: ");
+            string datos = Console.ReadLine().Trim();
 
-            Medidor medidor = new Medidor();
-            int nmrs = Convert.ToInt32(nmr);
-            decimal valors = Convert.ToDecimal(valor);
-            medidor.NroMedidor = nmrs;
-            medidor.Fecha = fecha;
-            medidor.ValorConsumo = valors;
+            string[] data = datos.Split('|','|','|');
+
+            int num = Convert.ToInt32(data[0]);
+            string fecha = Convert.ToString(data[1]);
+            decimal valor = Convert.ToDecimal(data[2]);
+
+            Medidor medidor = new Medidor()
+            {
+                NroMedidor = num,
+                Fecha = fecha,
+                ValorConsumo = valor
+            };
+
             medidorDAL.AgregarMedidor(medidor);
         }
 
         private static void Mostrar()
         {
-            List<Medidor> medidors = null;
-            lock (medidorDAL)
-            {
-                medidors = medidorDAL.ObtenerMedidor();
-            }
+            List<Medidor> medidors = medidorDAL.ObtenerMedidor();
             foreach (Medidor medidor in medidors)
             {
                 Console.WriteLine(medidor);
