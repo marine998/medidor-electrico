@@ -46,7 +46,7 @@ namespace Medidor_Electrico.Comunicacion
             }
             catch (Exception e)
             {
-                clienteCom.Escribir(e.Message);
+                clienteCom.Escribir("Datos ingresado erroneos");
                 clienteCom.Desconectar();
             }
         }

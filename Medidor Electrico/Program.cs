@@ -78,7 +78,7 @@ namespace MedidorElectrico
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Datos ingresados erroneos");
             }
         }
 
