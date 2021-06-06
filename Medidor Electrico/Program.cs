@@ -76,7 +76,7 @@ namespace MedidorElectrico
                     medidorDAL.AgregarMedidor(medidor);
                 }
             }
-            catch (Exception e)
+            catch
             {
                 Console.WriteLine("Datos ingresados erroneos");
             }
