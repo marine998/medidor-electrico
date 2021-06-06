@@ -59,7 +59,7 @@ namespace MedidorElectrico
             string[] data = datos.Split('|','|','|');
 
             int num = Convert.ToInt32(data[0]);
-            string fecha = Convert.ToString(data[1]);
+            DateTime fecha = Convert.ToDateTime(data[1]);
             decimal valor = Convert.ToDecimal(data[2]);
 
             Medidor medidor = new Medidor()

@@ -62,7 +62,7 @@ namespace MedidorModel.DAL
                         {
                             string[] arr = texto.Trim().Split('|');
                             int num = Convert.ToInt32(arr[0]);
-                            string fecha = Convert.ToString(arr[1]);
+                            DateTime fecha = Convert.ToDateTime(arr[1]);
                             decimal valor = Convert.ToDecimal(arr[2]);
 
                             Medidor medidor = new Medidor()
