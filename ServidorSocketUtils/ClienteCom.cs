@@ -40,7 +40,7 @@ namespace ServidorSocketUtils
         {
             try
             {
-                return this.reader.ReadLine().Trim();
+                return this.reader.ReadLine();
 
             }catch(Exception ex)
             {
