@@ -18,7 +18,6 @@ namespace Medidor_Electrico.Comunicacion
         {
             this.clienteCom = clienteCom;
         }
-
         public void Ejecutar()
         {
             try

@@ -14,13 +14,11 @@ namespace Medidor_Electrico.Comunicacion
     public class HebraServidor
     {
         private IMedidorDAL medidorDAL = MedidorDALArchivo.GetInstancia();
-
         public void Ejecutar()
         {
             int puerto = Convert.ToInt32(ConfigurationManager.AppSettings["puerto"]);
             Console.WriteLine("Iniciando Servidor en puerto {0} ", puerto);
             ServerSocket servidor = new ServerSocket(puerto);
-
             if (servidor.Iniciar())
             {
                 while (true)

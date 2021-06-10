@@ -16,7 +16,6 @@ namespace MedidorElectrico
     class Program
     {
         private static IMedidorDAL medidorDAL = MedidorDALArchivo.GetInstancia();
-
         static void Main(string[] args)
         {
             HebraServidor hebra = new HebraServidor();
@@ -50,7 +49,6 @@ namespace MedidorElectrico
             }
             return continuar;
         }
-
         private static void Ingresar()
         {
             try
@@ -81,7 +79,6 @@ namespace MedidorElectrico
                 Console.WriteLine("Datos ingresados erroneos");
             }
         }
-
         private static void Mostrar()
         {
             List<Medidor> medidors = null;
